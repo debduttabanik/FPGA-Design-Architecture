@@ -1,45 +1,82 @@
 # FPGA-Design-Architecture
 It contains information about what we learned in 10 days workshop mainly about Open FPGA, its advantage and needs; Verilog to routing(VTR); Versatile Place and Route (VPR)
-FPGA - Fabric, Design and Architecture
-This repository contains all the information studied and created during the FPGA - Fabric, Design and Architecture workshop. It is primarily focused on a complete FPGA flow using the maximum usage of Open FPGA.
-Table of Content:
-Introduction to FPGA
-  FPGA vs ASIC Comparison
-DAY-1:Exploring FPGA Basic and Vivado
-  FPGA Architecture
-  Counter Example in Vivado
-DAY-2: Exploring OpenFPGA,VPR and VTR
-DAY-3: RISC-V Core Programing Using Vivado
-DAY-4: Introduction to SOFA FPGA Fabric
-DAY-5: RISC-V Core on Custom Sofa Fabric
-Introduction To FPGA
-FPGA (Field Programmable Gate Array) are intergated circuits which have a complex arrangement of configurable logic blocks (CLBs) and programmable interconnects.
-FPGA vs ASIC Comparison
-FPGA	ASIC
-Field Programmable Gate Array	Application Specific Integrated Circuit
-RTL to Bitstream	RTL to Layout
-Reconfigurable Circuit	Permanent Circuit
-Less Energy Efficient. Required more power for same task as compared to ASIC	More energy efficient
-Useful for prototyping or validating a design	Used for final product design after validation
-Day 1 - Exploring FPGA Basics and Vivado
-FPGA Architecture
-The FPGA Architecture primarily consists of : - Configurable Logic Blocks - Programmable Interconnects - I/O Cells - Memory / Block RAM
+Here's a concise overview of what the project covers:
+Project Purpose
+The repository documents a 5-day FPGA workshop focused on:
+•	FPGA fundamentals 
+•	FPGA architecture and design flow 
+•	Open-source FPGA tools 
+•	RISC-V implementation on FPGA 
+•	Custom FPGA fabrics using SOFA/OpenFPGA 
+The workshop emphasizes a complete open-source FPGA workflow from RTL design to bitstream generation. 
+Main Topics Covered
+1. FPGA Fundamentals
+The README introduces:
+•	FPGA architecture 
+•	Configurable Logic Blocks (CLBs) 
+•	LUTs (Look-Up Tables) 
+•	Programmable interconnects 
+•	I/O cells 
+•	Memory/Block RAM 
+It also compares FPGAs and ASICs, highlighting that FPGAs are reconfigurable and ideal for prototyping, while ASICs are optimized for final production designs. 
+2. Vivado-Based Counter Design
+A 4-bit counter is implemented using Verilog and tested in the FPGA design flow:
+•	RTL coding 
+•	Simulation 
+•	Elaboration 
+•	I/O planning 
+•	Synthesis 
+•	Constraints definition 
+The project uses a Basys 3 FPGA Board for experiments. 
+3. OpenFPGA, VPR, and VTR
+The repository explains:
+•	OpenFPGA Documentation 
+•	VPR Documentation 
+•	VTR Documentation 
+It describes:
+•	Packing 
+•	Placement 
+•	Routing 
+•	Timing analysis 
+•	Power analysis 
+within an open-source FPGA CAD flow. 
+4. RISC-V Core Implementation
+The workshop uses a 4-stage pipelined RISC-V core called RVMYTH:
+•	Developed in TL-Verilog 
+•	Compiled to Verilog 
+•	Processed through Vivado RTL-to-bitstream flow 
+The design includes:
+•	Instruction memory 
+•	Data memory 
+•	ALU 
+•	I/O interfaces 
+5. SOFA FPGA Fabric
+The repository explores:
+•	SOFA FPGA Project 
+•	Open-source FPGA fabrics built with the SkyWater 130 nm process 
+The specific fabric discussed is FPGA1212_QLSOFA_HD_PNR, and the project demonstrates:
+•	Area utilization 
+•	Post-implementation simulation 
+•	Resource mapping on custom FPGA fabrics 
+6. RISC-V on Custom FPGA Fabric
+The final section combines:
+•	RVMYTH RISC-V core 
+•	SOFA FPGA fabric 
+•	OpenFPGA flow 
+•	VTR flow 
+to demonstrate a complete open-source FPGA implementation pipeline. 
+Strengths of the Repository
+•	Covers both commercial (Vivado) and open-source FPGA flows. 
+•	Introduces modern open FPGA research tools. 
+•	Includes practical Verilog examples. 
+•	Demonstrates RISC-V implementation. 
+•	Documents a full FPGA CAD workflow from RTL to routing and analysis. 
+If you're preparing for FPGA interviews, FPGA/VLSI coursework, or RISC-V projects, I can also provide a deeper technical review of the repository, identify strengths and weaknesses, and suggest improvements to make it portfolio-ready.
 
-Configurable Logic Block
-Configurable Logic Block (CLB) is responsible for the combinational or sequential logic implementation. CLB consists of :
-•	Look-up Table (LUT) - Logic function implementation
-•	Carry and Control Logic - Arithmetic Operations
-•	Flip-flops and/or latches
- Basys FPGA BoardThe FPGA used in this repository is Basys 3 Artix-7 FPGA. Below is the Basys FPGA . aboardandsome major elements on the board  
-No	Description	No	Description
-01	Power Good LED	09	Reset
-02	I/O	10	Jumper
-03	I/O	11	Interface
-04	Four 7-segment Display	12	VGA Connector
-05	Slide switches	13	USB Port
-06	LEDs	14	External Power
-07	Pushbuttons	15	Switch
-08	FPGA programming done LED	16	Jumper
+
+
+
+
 Counter Example in Vivado
 A 4-bit up counter is being used for exploring the Vivado tool and OpenFPGA. Below mentioned the RTL for the counter modules that is being used
  `timescale 1ns / 1ps
