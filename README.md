@@ -75,7 +75,7 @@ If you're preparing for FPGA interviews, FPGA/VLSI coursework, or RISC-V project
 
 
 
-
+Day-1 Exploring FPGA basic and Vivado
 
 Counter Example in Vivado
 A 4-bit up counter is being used for exploring the Vivado tool and OpenFPGA. Below mentioned the RTL for the counter modules that is being used
