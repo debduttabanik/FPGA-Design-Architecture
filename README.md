@@ -2,7 +2,7 @@
 It contains information about what we learned in 10 days workshop mainly about Open FPGA, its advantage and needs; Verilog to routing(VTR); Versatile Place and Route (VPR)
 Here's a concise overview of what the project covers:
 Project Purpose
-The repository documents a 5-day FPGA workshop focused on:
+The repository documents a 10-day FPGA workshop focused on:
 •	FPGA fundamentals 
 •	FPGA architecture and design flow 
 •	Open-source FPGA tools 
