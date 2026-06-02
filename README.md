@@ -119,15 +119,7 @@ A 4-bit up counter is being used for exploring the Vivado tool and OpenFPGA. Bel
          end
      end
 
- endmodule 
-Counter Simulation and Elaboration
-The snippet below shows the behavioural simulation for the up counter.
- 
-Elaboration binds modules to module instances, builds the model hierarchy, computes parameter values, resolves hierarchical names, establishes net connectivity, and prepares all of this for simulation.
-The snippet below is the schematic of the counter design after elaboration.
 
-In I/O planning, the ports for modules are assigned respective FPGA pins. The snippet below shows the details about I/O planning.
- 
  
 
 Counter Synthesis
@@ -198,7 +190,7 @@ The RISC-V RTL consists of multiple blocks/modules. Some of them are:
 •	Data memory
 •	ALU
 •	I/O ports
-The snippets below shows the behavioural simulation of the RVMYTH RISC-V core in vivado simulator. The instruction memory contains instructions for addition of integers from 1 to 9. I could not get output as I got error for this simulation.
+
  
 
 
@@ -213,12 +205,12 @@ Day 4 - Introduction To SOFA FPGA Fabric
 SOFA (Skywater Opensource FPGAs) are a series of open-source FPGA IPs designed using open-source Skywater 130nm PDKs and OpenFPGA framework.
 The FPGA IP design used in this repository is FPGA1212_QLSOFA_HD_PNR which has 50MHz of maximum operating speed, 1152 LUTs, 2304 Flip-flops, 1152 soft adders. The complete design is used over OpenFPGA framework and the various reports are generated.
 SOFA Counter Area
-The snippet below shows the utilization of the counter in SOFA FPGA Fabric.
 
 
 
-SOFA Counter Post Implementation
-The snippet below shows the post implementation simulation of the counter in SOFA FPGA Fabric.
+
+
+
  
 
  
@@ -226,8 +218,8 @@ Day 5 - RISCV Core on Custom SOFA Fabric
 The RVMYTH discussed is now used along with the custom SOFA FPGA fabric. The design is then taken through the complete OpenFPGA framework and VTR flow. The various logs and reports generated as the outcome of the flow .
 
 	
-  SOFA RVMYTH Utilization
-The snippets below shows the device utilization for RVMYTH core on SOFA FPGA Fabric by the tool.
+  
+
  	 
 References
 •	VLSI System Design: https://www.vlsisystemdesign.com/ip/
